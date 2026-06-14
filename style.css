@@ -1,0 +1,388 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F5F2;
+    color: #4F5D47;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #F8F5F2;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #800020;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4F5D47;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #800020;
+    transform: translateY(-2px);
+}
+
+.nav-links a {
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 75vh;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 8%;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.launching-soon {
+    display: inline-block;
+    background-color: #E6D3B3;
+    color: #800020;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #800020;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 1.4rem;
+    color: #4F5D47;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    margin-bottom: 35px;
+    font-size: 1.05rem;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #800020;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #5C0016;
+}
+
+.secondary-btn {
+    border: 2px solid #A3B18A;
+    color: #4F5D47;
+}
+
+.secondary-btn:hover {
+    background-color: #A3B18A;
+    color: white;
+}
+
+.about {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.section-tag {
+    color: #800020;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #4F5D47;
+    margin-bottom: 30px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 1.05rem;
+}
+
+.inspirations {
+    padding: 100px 10%;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.inspirations h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #4F5D47;
+    margin-bottom: 50px;
+}
+
+.inspiration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.inspiration-card {
+    background-color: #F8F5F2;
+    padding: 35px 25px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid #E6D3B3;
+}
+
+.inspiration-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(128, 0, 32, 0.1);
+}
+
+.inspiration-card h3 {
+    color: #800020;
+    margin-bottom: 15px;
+}
+
+.inspiration-card p {
+    color: #4F5D47;
+}
+
+.services {
+    padding: 100px 10%;
+    text-align: center;
+    background-color: #F8F5F2;
+}
+
+.services h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #4F5D47;
+    margin-bottom: 50px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #FFFFFF;
+    padding: 35px 25px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid #E6D3B3;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(128, 0, 32, 0.1);
+}
+
+.service-card span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #800020;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #4F5D47;
+}
+
+.why-choose {
+    padding: 100px 10%;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.why-choose h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #4F5D47;
+    margin-bottom: 50px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.why-card {
+    background-color: #F8F5F2;
+    padding: 35px 25px;
+    border-radius: 20px;
+    border: 1px solid #E6D3B3;
+    transition: all 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(128, 0, 32, 0.1);
+}
+
+.why-card span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.why-card h3 {
+    color: #800020;
+    margin-bottom: 15px;
+}
+
+.why-card p {
+    color: #4F5D47;
+}
+
+.stay-tuned {
+    padding: 100px 10%;
+    background-color: #A3B18A;
+    text-align: center;
+    color: white;
+}
+
+.stay-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.stay-tuned .section-tag {
+    color: #F8F5F2;
+}
+
+.stay-tuned h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+}
+
+.stay-tuned p {
+    margin-bottom: 35px;
+    font-size: 1.05rem;
+}
+
+.stay-tuned .primary-btn {
+    background-color: #800020;
+}
+
+.stay-tuned .primary-btn:hover {
+    background-color: #5C0016;
+}
+
+.footer {
+    background-color: #4F5D47;
+    color: #F8F5F2;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer-info {
+    margin: 30px 0;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    .about h2,
+    .inspirations h2,
+    .services h2,
+    .why-choose h2,
+    .stay-tuned h2 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
